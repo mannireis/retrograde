@@ -15,7 +15,7 @@ body {
     display: flex;
     font-family: "JetBrains Mono";
     background: url("/images/bg.png") repeat;
-    animation: scrollBg 20s linear infinite;
+    animation: scrollBg 5s linear infinite;
     color: #f9f4f5;
     margin: 0;
     width: 100%;
