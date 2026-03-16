@@ -1,0 +1,39 @@
+/*global css*/
+
+@font-face {
+    font-family: "JetBrains Mono";
+    src: url(/fonts/JetBrainsMono[wght].ttf);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: "JetBrains Mono";
+    background: url("/images/bg.png") repeat;
+    animation: scrollBg 20s linear infinite;
+    color: #f9f4f5;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    padding-inline: max(calc((100% - 50%) / 2), 15px);
+}
+
+main {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes scrollBg {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 1000px 0;
+    }
+}

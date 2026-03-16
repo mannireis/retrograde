@@ -1,17 +1,47 @@
 ---
-
+import Layout from "../layouts/layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="retrograde">
+    <a class="cart" href="main">
+        <img src="images/cart.png" alt="" />
+    </a>
+    <img src="images/star.png" alt="" class="spin star" />
+</Layout>
+
+<style>
+    @keyframes rotate-center-normal {
+        0% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+        100% {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+
+    .spin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+        animation: rotate-center-normal 5s linear 0s infinite reverse none;
+    }
+
+    .star {
+        z-index: 5;
+    }
+
+    .cart {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg);
+        z-index: 7;
+        transition: transform 0.2s ease;
+    }
+
+    .cart:hover {
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+</style>

@@ -1,0 +1,133 @@
+---
+import Layout from "../layouts/layout.astro";
+---
+
+<Layout title="retrograde">
+    <div class="main">
+        <div>
+            <img src="images/cart.png" alt="" class="cart" />
+        </div>
+        <div class="spacer"></div>
+        <div>
+            <h1>retrograde</h1>
+            <p>Have you ever wanted to make a game for some retro console?</p>
+            <p>Than this is for you!!!!</p>
+            <p></p>
+        </div>
+        <div class="spacer"></div>
+        <div class="tutorials">
+            <h2>Learning Resources:</h2>
+            <a href="https://www.pokemon-mini.net/">Pokémon Mini!</a>
+            <a href="https://gbdev.io/gb-asm-tutorial/index.html">OG GameBoy</a>
+            <a href="https://www.nesdev.org/wiki/Programming_guide">NES!</a>
+        </div>
+        <div class="spacer"></div>
+        <div class="projects">
+            <h2>Existing Projects:</h2>
+            <h3>Coming Soon!!!</h3>
+            <!-- <div>
+                <img src="/images/cart_gb.png" alt="" />
+                <img src="/images/cart_gba.png" alt="" />
+                <img src="/images/cart_gbc.png" alt="" />
+                <img src="/images/cart.png" alt="" />
+            </div> -->
+        </div>
+        <div class="spacer"></div>
+        <div class="faq">
+            <h2>Frequently Asked Question's</h2>
+            <details>
+                <summary>Q: Is this really free?</summary>
+                <p>A: Yes! This program is run by teenagers for teenagers</p>
+            </details>
+            <details>
+                <summary>Q: Can I do this even if I'm a begginer?</summary>
+                <p>A: Yes! We really want to encourage begginers :3</p>
+            </details>
+            <details>
+                <summary>Q: Can I use AI for this?</summary>
+                <p>
+                    A: Yes and No you can can use it for debbuging but ai art is
+                    not allowed
+                </p>
+            </details>
+        </div>
+        <div class="spacer"></div>
+        <footer>
+            <a href="https://hackclub.com/">hackclub</a>
+        </footer>
+    </div>
+</Layout>
+
+<style>
+    footer {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 20px;
+    }
+
+    details {
+        margin: 25px;
+    }
+
+    details > p {
+        margin: 10px;
+    }
+
+    h2,
+    h1 {
+        margin-bottom: 25px;
+    }
+
+    .projects > div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .projects > div > img {
+        transform: scale(0.75);
+        transition: transform 0.2s ease;
+    }
+
+    .projects > div > img:hover {
+        transform: rotate(10deg);
+    }
+
+    a {
+        color: whitesmoke;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: floralwhite;
+        text-decoration: floralwhite wavy underline;
+    }
+
+    .spacer {
+        background-color: whitesmoke;
+        height: 2px;
+        width: 100%;
+        margin: 25px;
+    }
+
+    .cart {
+        margin-top: 25px;
+        transition: transform 0.2s ease;
+    }
+
+    .cart:hover {
+        transform: rotate(10deg);
+    }
+
+    .main {
+        color: whitesmoke;
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        /*background-color: #222034;*/
+        width: 100%;
+        min-height: 100vh;
+    }
+</style>
