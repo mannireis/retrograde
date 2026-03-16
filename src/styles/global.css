@@ -1,10 +1,5 @@
 /*global css*/
 
-@font-face {
-    font-family: "JetBrains Mono";
-    src: url(/fonts/JetBrainsMono[wght].ttf);
-}
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,7 +8,6 @@
 
 body {
     display: flex;
-    font-family: "JetBrains Mono";
     background: url("/images/bg.png") repeat;
     animation: scrollBg 5s linear infinite;
     color: #f9f4f5;
