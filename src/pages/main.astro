@@ -11,20 +11,35 @@ import Layout from "../layouts/layout.astro";
         <div>
             <h1>retrograde</h1>
             <p>
-                Have you ever wanted to make a game for some retro console? Than
+                Have you ever wanted to make a game for a retro console? Then
                 this is for you!!!
             </p>
             <p>
-                Make a homebrew game for a retro console get a grant to buy that
-                console
+                Make a homebrew game for a retro console, get a grant to buy
+                that console!!
             </p>
         </div>
         <div class="spacer"></div>
         <div class="tutorials">
             <h2>Learning Resources:</h2>
-            <a href="https://www.pokemon-mini.net/">Pokémon Mini!</a>
-            <a href="https://gbdev.io/gb-asm-tutorial/index.html">OG GameBoy</a>
-            <a href="https://www.nesdev.org/wiki/Programming_guide">NES!</a>
+            <div class="list">
+                <ul>
+                    <li>
+                        <a href="https://www.pokemon-mini.net/">Pokémon Mini!</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://gbdev.io/gb-asm-tutorial/index.html"
+                            >OG GameBoy</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://www.nesdev.org/wiki/Programming_guide"
+                            >NES!</a
+                        >
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="spacer"></div>
         <div class="projects">
@@ -39,31 +54,46 @@ import Layout from "../layouts/layout.astro";
         </div>
         <div class="spacer"></div>
         <div class="faq">
-            <h2>Frequently Asked Question's</h2>
+            <h2>Frequently Asked Questions</h2>
             <details>
                 <summary>Q: Is this really free?</summary>
-                <p>A: Yes! This program is run by teenagers for teenagers</p>
+                <p>
+                    A: This program is being run by <a
+                        href="https://hackclub.com/">Hack Club</a
+                    >, a nonprofit that makes programs by teenagers for
+                    teenagers.
+                </p>
             </details>
             <details>
                 <summary>Q: Can I do this even if I'm a begginer?</summary>
-                <p>A: Yes! We really want to encourage begginers :3</p>
+                <p>
+                    A: Yes! We encourage begginers if you need help just ask in <a
+                        href="https://app.slack.com/client/E09V59WQY1E/activity"
+                        >#retrograde</a
+                    > :3
+                </p>
             </details>
             <details>
                 <summary>Q: Can I use AI for this?</summary>
                 <p>
-                    A: Yes and No you can can use it for debbuging but ai art is
-                    not allowed
+                    A: You are allowed to use AI for debugging purposes, but you
+                    cannot use it to make assets.
                 </p>
             </details>
         </div>
         <div class="spacer"></div>
         <footer>
-            <a href="https://hackclub.com/">hackclub</a>
+            <a href="https://hackclub.com/">Hack Club</a>
         </footer>
     </div>
 </Layout>
 
 <style>
+    .list {
+        text-align: center;
+        display: inline-block;
+        text-align: left;
+    }
     footer {
         display: flex;
         justify-content: flex-start;
