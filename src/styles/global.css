@@ -1,4 +1,8 @@
 /*global css*/
+@font-face {
+    font-family: "Pokemon Emerald";
+    src: url(/fonts/pokemon-emerald.otf);
+}
 
 * {
     box-sizing: border-box;
@@ -8,6 +12,7 @@
 
 body {
     display: flex;
+    font-family: "Pokemon Emerald";
     background: url("/images/bg.png") repeat;
     animation: scrollBg 5s linear infinite;
     color: #f9f4f5;

@@ -44,7 +44,7 @@ import Layout from "../layouts/layout.astro";
         <div class="spacer"></div>
         <div class="projects">
             <h2>Existing Projects:</h2>
-            <h3>Coming Soon!!!</h3>
+            <p>Coming Soon!!!</p>
             <!-- <div>
                 <img src="/images/cart_gb.png" alt="" />
                 <img src="/images/cart_gba.png" alt="" />
@@ -89,6 +89,9 @@ import Layout from "../layouts/layout.astro";
 </Layout>
 
 <style>
+    summary {
+        font-size: 28px;
+    }
     .list {
         text-align: center;
         display: inline-block;
@@ -106,6 +109,13 @@ import Layout from "../layouts/layout.astro";
 
     details > p {
         margin: 10px;
+    }
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 40px;
     }
 
     h2,
@@ -130,8 +140,13 @@ import Layout from "../layouts/layout.astro";
     }
 
     a {
+        font-size: 28px;
         color: whitesmoke;
         text-decoration: none;
+    }
+
+    p {
+        font-size: 28px;
     }
 
     a:hover {
